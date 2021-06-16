@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+	<title>Payment gateway integration</title>
+	<link rel="stylesheet"  href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="images/logo1.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<div class="text-box">
+			<h1>We have all been globally traumatised</h1>
+			<p>We should help each other in this pandemic situations.<br>Your little donation can save someone's life!</p>
+			<a href="https://pages.razorpay.com/pl_HNhHWxEP1UkMwE/view" data-url="https://pages.razorpay.com/pl_HNhHWxEP1UkMwE/view" class="btn" href="#" role="button">Donate here</a>
+			<script>
+    (function(){
+      var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+      if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+      s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+      rzp && rzp.init && rzp.init()}})();
+  </script>
+    
+		</div>
+	</section>
+
+	<section class="about">
+		<h1>About COVID-19</h1>
+		<p>COVID-19 is a virus that has been spread all around the globe and has become a global pandemic.</p>
+
+		<div class="row">
+			<div class="about-row">
+				<h3>When it started?</h3>
+				<p>COVID-19 formerly referred as 'novel coronavirus' was first reported from Wuhan, China on 31st December 2019. </p>
+			</div>
+			<div class="about-row">
+				<h3>When it entered India?</h3>
+				<p>The very first case of COVID-19 was reported from Thrissur, Kerala on 30th January 2020. </p>
+			</div>
+			<div class="about-row">
+				<h3>What are the symptoms of COVID-19? </h3>
+				<p>The common symptoms of COVID-19 includes normal to high fever, body pain, restlessness, breathing problems, joint pain.</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="cta">
+		<a href="" class="btn">CONTACT US</a>
+	</section>
+
+	<footer>
+		<div class="bottom-footer">
+			<p>copyright &copy;2021</p>
+		</div>
+	</footer>
+
+<!-----JavaScript----->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu(){
+			navLinks.style.right="0"
+		}
+		function hideMenu(){
+			navLinks.style.right="-200px"
+		}
+	</script>
+
+
+
+</body>
+</html>
+
+
+
